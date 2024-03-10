@@ -1,0 +1,49 @@
+body {
+  margin: 0px;
+}
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.75rem;
+}
+.navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+li {
+  list-style: none;
+  margin: 0px;
+  padding: none;
+}
+.wrapper {
+  overflow: hidden;
+}
+.slide {
+  padding: 0;
+  margin: 0;
+  display: flex;
+
+  transform: translate3d(0, 0, 0);
+}
+.slide:hover {
+  will-change: transform;
+}
+
+.slide img {
+  display: block;
+  max-width: 100%;
+}
+.slide li {
+  width: 80vh;
+  max-width: 800px;
+  margin: 0 20px;
+  flex-shrink: 0;
+  opacity: 0.8;
+  transform: scale(0.8);
+  transition: 0.4s;
+}
+.slide li.active {
+  opacity: 1;
+  transform: scale(1);
+}
